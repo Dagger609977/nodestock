@@ -1,3 +1,4 @@
+// Comment
 const express = require('express');
 const app = express();
 const exphbs  = require('express-handlebars');
@@ -11,7 +12,9 @@ app.set('view engine', 'handlebars');
 
 // Set handlebar routes
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('home', {
+
+    });
 });
 
 // Set static folder
